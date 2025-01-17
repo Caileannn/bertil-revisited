@@ -119,6 +119,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &273877019 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8955314803516395601, guid: 06903c7ca7f97724cb7aa65487bf27a9, type: 3}
+  m_PrefabInstance: {fileID: 348591350}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -269,8 +274,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0de7b2761652133448a123401726982a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  smoothingTime: 0.01
+  target: {fileID: 273877019}
+  smoothingTime: 0.5
 --- !u!1001 &348591350
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -530,6 +535,54 @@ Transform:
   - {fileID: 832575519}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1327276578
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1327276579}
+  - component: {fileID: 1327276580}
+  m_Layer: 0
+  m_Name: manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1327276579
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327276578}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.066470765, y: 0.92535233, z: 0.9084567}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1327276580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1327276578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46b1255ba1bc66440a88652c438bc653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _directoryPath: C:/Users/caile/Desktop/beep-revisted/luminate/results/walk-coll/Bertil
+  _modelAssets: []
+  _fileCount: 1
+  _chair: {fileID: 1908102237}
 --- !u!1 &1553794441
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,6 +647,17 @@ Transform:
   - {fileID: 410087041}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1908102237 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6166024691183204690, guid: 06903c7ca7f97724cb7aa65487bf27a9, type: 3}
+  m_PrefabInstance: {fileID: 348591350}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c8a3be03c48fc64dbe71b7714d1f3ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -602,3 +666,4 @@ SceneRoots:
   - {fileID: 1762490778}
   - {fileID: 1553794442}
   - {fileID: 348591350}
+  - {fileID: 1327276579}

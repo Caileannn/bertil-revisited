@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseArea: {fileID: 7418866971930987124, guid: 06903c7ca7f97724cb7aa65487bf27a9, type: 3}
-  numAreas: 10
+  numAreas: 20
   separation: 120
   buildOnly: 0
 --- !u!1 &330585543
@@ -254,8 +254,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.07123227, y: -0.9022528, z: 0.16360305, w: -0.39255565}
-  m_LocalPosition: {x: -8.588169, y: 6.6193314, z: 6.9628115}
+  m_LocalRotation: {x: -0.30998492, y: -0.34148887, z: 0.12039281, w: -0.8790906}
+  m_LocalPosition: {x: 64.87971, y: 59.352207, z: -58.20559}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

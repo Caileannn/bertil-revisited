@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8866130782498476707}
   - component: {fileID: 7712522952756852289}
   - component: {fileID: 7984391494509201093}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Foot B L
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -202,6 +202,7 @@ MonoBehaviour:
   penalizeGroundContact: 1
   groundContactPenalty: 0.05
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &1151745544618340845
 GameObject:
   m_ObjectHideFlags: 0
@@ -247,7 +248,7 @@ GameObject:
   - component: {fileID: 2256745881068578957}
   - component: {fileID: 6354302325640529167}
   - component: {fileID: 2870144861548496367}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Foot F L
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -436,6 +437,7 @@ MonoBehaviour:
   penalizeGroundContact: 1
   groundContactPenalty: 0.05
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &2289532216993067153
 GameObject:
   m_ObjectHideFlags: 0
@@ -448,7 +450,7 @@ GameObject:
   - component: {fileID: 5891249379659121640}
   - component: {fileID: 1323503459328503633}
   - component: {fileID: 7990991280052229504}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Seat
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -473,6 +475,7 @@ Transform:
   - {fileID: 3728027083972251442}
   - {fileID: 1308457458635960232}
   - {fileID: 2448481619663716039}
+  - {fileID: 8962359057435155128}
   m_Father: {fileID: 8815931525414539075}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &5891249379659121640
@@ -540,6 +543,7 @@ MonoBehaviour:
   penalizeGroundContact: 1
   groundContactPenalty: -1
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &2379778770571311911
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,7 +557,7 @@ GameObject:
   - component: {fileID: 7211576320244617690}
   - component: {fileID: 8388034261288020969}
   - component: {fileID: 6089580529258399105}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Back
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -742,6 +746,7 @@ MonoBehaviour:
   penalizeGroundContact: 0
   groundContactPenalty: 0
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &2390858409959606047
 GameObject:
   m_ObjectHideFlags: 0
@@ -799,7 +804,7 @@ GameObject:
   - component: {fileID: 4618351795593560474}
   - component: {fileID: 2652472236069777580}
   - component: {fileID: 7076845212111465373}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Upper Leg F L
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -842,9 +847,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.10572515
-  m_Height: 0.9367758
+  m_Height: 0.70835024
   m_Direction: 1
-  m_Center: {x: 0.020888288, y: 0.5123386, z: 0.010401126}
+  m_Center: {x: 0.02088829, y: 0.398124, z: 0.010401073}
 --- !u!54 &4618351795593560474
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -989,8 +994,72 @@ MonoBehaviour:
   agent: {fileID: 0}
   agentDoneOnGroundContact: 0
   penalizeGroundContact: 1
-  groundContactPenalty: -0.1
+  groundContactPenalty: -0.3
   touchingGround: 0
+  touchingStairs: 0
+--- !u!1 &3431018874331122299
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8962359057435155128}
+  - component: {fileID: 2826980954736257625}
+  m_Layer: 3
+  m_Name: Raycast
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8962359057435155128
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3431018874331122299}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.0071026087, y: 0.2099998, z: 1.85}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5426667537083680208}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2826980954736257625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3431018874331122299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bb6b867a41448888c1cd4f99643ad71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SensorName: RayPerceptionSensor
+  m_DetectableTags:
+  - Stairs
+  - Wall
+  - Ground
+  m_RaysPerDirection: 3
+  m_MaxRayDegrees: 30
+  m_SphereCastRadius: 0.64
+  m_RayLength: 29
+  m_RayLayerMask:
+    serializedVersion: 2
+    m_Bits: 4294967291
+  m_ObservationStacks: 1
+  m_AlternatingRayOrder: 1
+  m_UseBatchedRaycasts: 0
+  rayHitColor: {r: 0, g: 1, b: 0.02520442, a: 1}
+  rayMissColor: {r: 1, g: 0, b: 0, a: 1}
+  m_StartVerticalOffset: 0.13
+  m_EndVerticalOffset: -1.74
 --- !u!1 &3861716883777330207
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,7 +1073,7 @@ GameObject:
   - component: {fileID: 3863283637282188302}
   - component: {fileID: 4527773603313844292}
   - component: {fileID: 2312761445432501724}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Leg F L
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -1047,9 +1116,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.1010916
-  m_Height: 0.95934474
+  m_Height: 1.1856091
   m_Direction: 1
-  m_Center: {x: 0.024016561, y: 0.6583894, z: -0.008967934}
+  m_Center: {x: 0.024016563, y: 0.5452571, z: -0.008967481}
 --- !u!54 &3863283637282188302
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1194,8 +1263,9 @@ MonoBehaviour:
   agent: {fileID: 0}
   agentDoneOnGroundContact: 0
   penalizeGroundContact: 1
-  groundContactPenalty: -0.05
+  groundContactPenalty: -0.2
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &4338982477286579519
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,7 +1279,7 @@ GameObject:
   - component: {fileID: 7343999528410825689}
   - component: {fileID: 3173171683960270370}
   - component: {fileID: 2832241170930409709}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Leg F R
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -1252,9 +1322,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.1010916
-  m_Height: 0.95934474
+  m_Height: 1.1970674
   m_Direction: 1
-  m_Center: {x: 0.024016561, y: 0.6583894, z: -0.008967934}
+  m_Center: {x: 0.02401656, y: 0.53952783, z: -0.008969186}
 --- !u!54 &7343999528410825689
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1399,8 +1469,9 @@ MonoBehaviour:
   agent: {fileID: 0}
   agentDoneOnGroundContact: 0
   penalizeGroundContact: 1
-  groundContactPenalty: -0.05
+  groundContactPenalty: -0.2
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &4992965528412921058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,7 +1485,7 @@ GameObject:
   - component: {fileID: 7619404722115204057}
   - component: {fileID: 3584650040306438296}
   - component: {fileID: 1945443278098700617}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Foot B R
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -1603,6 +1674,7 @@ MonoBehaviour:
   penalizeGroundContact: 1
   groundContactPenalty: 0.05
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &5319243986511860401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1616,7 +1688,7 @@ GameObject:
   - component: {fileID: 5887735254478360288}
   - component: {fileID: 6905996864859445808}
   - component: {fileID: 1899635946580020614}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Upper Leg F R
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -1658,10 +1730,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.10572515
-  m_Height: 0.9367758
+  m_Radius: 0.11589059
+  m_Height: 0.7064741
   m_Direction: 1
-  m_Center: {x: 0.020888288, y: 0.5123386, z: 0.010401126}
+  m_Center: {x: 0.010722846, y: 0.39718765, z: 0.010401033}
 --- !u!54 &5887735254478360288
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1806,8 +1878,9 @@ MonoBehaviour:
   agent: {fileID: 0}
   agentDoneOnGroundContact: 0
   penalizeGroundContact: 1
-  groundContactPenalty: -0.1
+  groundContactPenalty: -0.3
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &6838956802771241683
 GameObject:
   m_ObjectHideFlags: 0
@@ -1838,7 +1911,7 @@ Transform:
   m_GameObject: {fileID: 6838956802771241683}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1860,19 +1933,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_BrainParameters:
-    VectorObservationSize: 219
+    VectorObservationSize: 233
     NumStackedVectorObservations: 1
     m_ActionSpec:
       m_NumContinuousActions: 34
-      BranchSizes: 00000000
-    VectorActionSize: 
+      BranchSizes: 
+    VectorActionSize: 22000000
     VectorActionDescriptions: []
-    VectorActionSpaceType: 0
+    VectorActionSpaceType: 1
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: d6a646bb27435d840957162634267728, type: 3}
   m_InferenceDevice: 0
-  m_BehaviorType: 1
-  m_BehaviorName: walking
+  m_BehaviorType: 0
+  m_BehaviorName: Bertil
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
@@ -1893,8 +1966,10 @@ MonoBehaviour:
   agentParameters:
     maxStep: 0
   hasUpgradedFromAgentParameters: 1
-  MaxStep: 100
-  _targetWalkingSpeed: 30
+  MaxStep: 5000
+  _BrainType: 0
+  _StepCount: 0
+  _targetWalkingSpeed: 10
   _randomiseWalkSpeed: 1
   _randomiseYRotation: 1
   _randomiseXYZRotation: 0
@@ -1913,6 +1988,10 @@ MonoBehaviour:
   bpFrontRightFoot: {fileID: 3379402902135481124}
   bpBackLeftFoot: {fileID: 372396747283852424}
   bpBackRightFoot: {fileID: 8393604010028570996}
+  _StepCountAtLastPosition: 0
+  _previousDistanceFromTarget: 3.4028235e+38
+  _InitialDistanceFromTarget: 0
+  _ClosestDistanceFromTarget: 0
 --- !u!114 &8200527715948681714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2072,7 +2151,7 @@ GameObject:
   - component: {fileID: 617982055713739748}
   - component: {fileID: 4762415544639884112}
   - component: {fileID: 8234436164819048998}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Upper Leg B R
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -2115,9 +2194,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.12489396
-  m_Height: 0.89511216
+  m_Height: 0.6351487
   m_Direction: 1
-  m_Center: {x: 2.2552625e-15, y: 0.5340101, z: 0.020962872}
+  m_Center: {x: 9.839811e-16, y: 0.40402973, z: 0.020964334}
 --- !u!54 &617982055713739748
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2262,8 +2341,9 @@ MonoBehaviour:
   agent: {fileID: 0}
   agentDoneOnGroundContact: 0
   penalizeGroundContact: 1
-  groundContactPenalty: -0.1
+  groundContactPenalty: -0.3
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &8055706559424475826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2277,7 +2357,7 @@ GameObject:
   - component: {fileID: 5475976256901503584}
   - component: {fileID: 1505400722018751921}
   - component: {fileID: 8924050008798886962}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Upper Leg B L
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -2320,9 +2400,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.12489396
-  m_Height: 0.89511216
+  m_Height: 0.64180857
   m_Direction: 1
-  m_Center: {x: 2.2552625e-15, y: 0.5340101, z: 0.020962872}
+  m_Center: {x: -7.677827e-15, y: 0.40735865, z: 0.020962223}
 --- !u!54 &5475976256901503584
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2467,8 +2547,9 @@ MonoBehaviour:
   agent: {fileID: 0}
   agentDoneOnGroundContact: 0
   penalizeGroundContact: 1
-  groundContactPenalty: -0.1
+  groundContactPenalty: -0.3
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &8331119037886618038
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,7 +2563,7 @@ GameObject:
   - component: {fileID: 5431095684331010618}
   - component: {fileID: 4521125523420189061}
   - component: {fileID: 3732920817626439542}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Foot F R
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -2671,6 +2752,7 @@ MonoBehaviour:
   penalizeGroundContact: 1
   groundContactPenalty: 0.05
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &8790672284210709105
 GameObject:
   m_ObjectHideFlags: 0
@@ -2684,7 +2766,7 @@ GameObject:
   - component: {fileID: 5048543964489063589}
   - component: {fileID: 1067328656515508020}
   - component: {fileID: 5498050556098790108}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Leg B L
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -2727,9 +2809,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.113734275
-  m_Height: 0.89645255
+  m_Height: 1.1422762
   m_Direction: 1
-  m_Center: {x: 0.016350754, y: 0.64650404, z: 0.00092832686}
+  m_Center: {x: 0.016350754, y: 0.5235924, z: 0.00092637225}
 --- !u!54 &5048543964489063589
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2874,8 +2956,9 @@ MonoBehaviour:
   agent: {fileID: 0}
   agentDoneOnGroundContact: 0
   penalizeGroundContact: 1
-  groundContactPenalty: -0.05
+  groundContactPenalty: -0.2
   touchingGround: 0
+  touchingStairs: 0
 --- !u!1 &9065985659418813080
 GameObject:
   m_ObjectHideFlags: 0
@@ -2889,7 +2972,7 @@ GameObject:
   - component: {fileID: 7012814365260885057}
   - component: {fileID: 4133689713292699079}
   - component: {fileID: 9040914131095326661}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Lower Leg B R
   m_TagString: Agent
   m_Icon: {fileID: 0}
@@ -2932,9 +3015,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.113734275
-  m_Height: 0.89645255
+  m_Height: 1.1560501
   m_Direction: 1
-  m_Center: {x: 0.016350754, y: 0.64650404, z: 0.00092832686}
+  m_Center: {x: 0.016350754, y: 0.51670516, z: 0.00092900475}
 --- !u!54 &7012814365260885057
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3079,5 +3162,6 @@ MonoBehaviour:
   agent: {fileID: 0}
   agentDoneOnGroundContact: 0
   penalizeGroundContact: 1
-  groundContactPenalty: -0.05
+  groundContactPenalty: -0.2
   touchingGround: 0
+  touchingStairs: 0

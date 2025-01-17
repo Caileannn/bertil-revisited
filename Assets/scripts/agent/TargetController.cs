@@ -16,9 +16,13 @@ namespace Unity.MLAgentsExamples
         [Header("Collider Tag To Detect")]
         public string tagToDetect = "Agent"; //collider tag to detect
 
+        [Header("Agent to Reset")]
+        public Chair agent; //The agent to reset when the target is touched       
+
         [Header("Target Placement")]
         public float spawnRadius; //The radius in which a target can be randomly spawned.
         public bool respawnIfTouched; //Should the target respawn to a different position when touched
+        public bool endEpisodeIfTouched; //Should the episode end when the target is touched
 
         [Header("Target Fell Protection")]
         public bool respawnIfFallsOffPlatform = true; //If the target falls off the platform, reset the position.
@@ -86,6 +90,11 @@ namespace Unity.MLAgentsExamples
                 if (respawnIfTouched)
                 {
                     MoveTargetToRandomPosition();
+                }
+
+                if (endEpisodeIfTouched)
+                {
+                    agent.EndEpisode();
                 }
             }
         }

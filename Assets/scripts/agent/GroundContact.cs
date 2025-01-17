@@ -18,6 +18,8 @@ namespace Unity.MLAgentsExamples
         public float groundContactPenalty; // Penalty amount (ex: -1).
         public bool touchingGround;
         const string k_Ground = "Ground"; // Tag of ground object.
+        public bool touchingStairs;
+        const string k_Stairs = "Stairs"; // Tag of ground object.
 
         /// <summary>
         /// Check for collision with ground, and optionally penalize agent.
@@ -37,6 +39,11 @@ namespace Unity.MLAgentsExamples
                     agent.EndEpisode();
                 }
             }
+
+            if (col.transform.CompareTag(k_Stairs))
+            {
+                touchingStairs = true;
+            }
         }
 
         /// <summary>
@@ -47,6 +54,11 @@ namespace Unity.MLAgentsExamples
             if (other.transform.CompareTag(k_Ground))
             {
                 touchingGround = false;
+            }
+
+            if (other.transform.CompareTag(k_Stairs))
+            {
+                touchingStairs = false;
             }
         }
     }
