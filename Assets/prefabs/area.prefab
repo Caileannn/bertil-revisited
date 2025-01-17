@@ -32,7 +32,6 @@ Transform:
   - {fileID: 4449300002391299885}
   - {fileID: 3728672633880950011}
   - {fileID: 455026408475664053}
-  - {fileID: 1966978900179307272}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &3791218013765731130
@@ -162,60 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c8a3be03c48fc64dbe71b7714d1f3ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &4579491280710750713
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 3199560723988012961}
-    m_Modifications:
-    - target: {fileID: 2648543110323444465, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648543110323444465, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648543110323444465, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648543110323444465, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648543110323444465, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648543110323444465, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2648543110323444465, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8267970689488322871, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_Name
-      value: stairs
-      objectReference: {fileID: 0}
-    - target: {fileID: 8267970689488322871, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
---- !u!4 &1966978900179307272 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2648543110323444465, guid: 424604bdfbaa7fb4a9ffbb6956a73933, type: 3}
-  m_PrefabInstance: {fileID: 4579491280710750713}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7773316900499620170
 PrefabInstance:
   m_ObjectHideFlags: 0
