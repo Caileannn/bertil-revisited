@@ -9,7 +9,7 @@ using UnityEngine;
 public class ModelManager : MonoBehaviour
 {
     [SerializeField]
-    public string _directoryPath;
+    public string _trainingPath;
 
     [SerializeField]
     public List<ModelAsset> _modelAssets = new();
@@ -18,6 +18,8 @@ public class ModelManager : MonoBehaviour
     public int _fileCount;
 
     private int m_CurrentModelIdx = 0;
+
+    public TrainingData _trainingData;
 
     public Chair _chair;
 
@@ -43,8 +45,8 @@ public class ModelManager : MonoBehaviour
 
     public void HandleSliderChange(float sliderValue){
 
-        int modelIndex = Mathf.RoundToInt(sliderValue * (_fileCount - 1)) + 1;
-        int newModelIdx = Mathf.Clamp(modelIndex, 1, _fileCount); 
+        int modelIndex = Mathf.RoundToInt(sliderValue * (_fileCount - 1));
+        int newModelIdx = Mathf.Clamp(modelIndex, 0, _fileCount - 1); 
 
         if(newModelIdx != m_CurrentModelIdx){
             m_CurrentModelIdx = newModelIdx;
@@ -55,10 +57,40 @@ public class ModelManager : MonoBehaviour
 
     public void HandleModelChange(){
         _chair.SetModel("Bertil", _modelAssets[m_CurrentModelIdx], InferenceDevice.Burst);
-        Debug.Log($"Mapped file index: {m_CurrentModelIdx}");
         OnModelChanged?.Invoke(_modelAssets[m_CurrentModelIdx]);
+    }
+
+    public void UpdateModel(int idx){
+        if(idx != m_CurrentModelIdx){
+            m_CurrentModelIdx = idx;
+            HandleModelChange();
+        }
     }
 
     
 
+}
+
+// Define classes to match the JSON structure
+[System.Serializable]
+public class TrainingData
+{
+    public TrainingRun Bertil;
+}
+
+[System.Serializable]
+public class TrainingRun
+{
+    public List<Checkpoint> checkpoints;
+    public Checkpoint final_checkpoint;
+}
+
+[System.Serializable]
+public class Checkpoint
+{
+    public int steps;
+    public string file_path;
+    public float reward;
+    public double creation_time;
+    public List<string> auxillary_file_paths;
 }

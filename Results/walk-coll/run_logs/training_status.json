@@ -1,0 +1,47 @@
+{
+    "Bertil": {
+        "checkpoints": [
+            {
+                "steps": 94,
+                "file_path": "results\\walk-coll\\Bertil\\Bertil-94.onnx",
+                "reward": 5.016426086426,
+                "creation_time": 1735932687.0327806,
+                "auxillary_file_paths": [
+                    "results\\walk-coll\\Bertil\\Bertil-8499353.pt"
+                ]
+            },
+            {
+                "steps": 988,
+                "file_path": "results\\walk-coll\\Bertil\\Bertil-988.onnx",
+                "reward": 10.296134440104,
+                "creation_time": 1735932902.979599,
+                "auxillary_file_paths": [
+                    "results\\walk-coll\\Bertil\\Bertil-8999386.pt"
+                ]
+            },
+            {
+                "steps": 2000,
+                "file_path": "results\\walk-coll\\Bertil\\Bertil-1000.onnx",
+                "reward": 15.2889539930557,
+                "creation_time": 1735933117.5899172,
+                "auxillary_file_paths": [
+                    "results\\walk-coll\\Bertil\\Bertil-9499297.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 10000940,
+            "file_path": "results\\walk-coll\\Bertil.onnx",
+            "reward": 2627.0708356584823,
+            "creation_time": 1735933354.1163373,
+            "auxillary_file_paths": [
+                "results\\walk-coll\\Bertil\\Bertil-10000940.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.2.0.dev0",
+        "torch_version": "2.2.2+cu121"
+    }
+}
