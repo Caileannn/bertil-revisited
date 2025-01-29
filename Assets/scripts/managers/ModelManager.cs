@@ -5,6 +5,7 @@ using Unity.MLAgents.Policies;
 using Unity.Sentis;
 using Unity.Sentis.ONNX;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ModelManager : MonoBehaviour
 {
@@ -27,8 +28,11 @@ public class ModelManager : MonoBehaviour
 
     public static event OnModelChangedDelegate OnModelChanged;
 
+    public Button _button;
+
     private void OnEnable(){
         SliderController.OnSliderMoved += HandleSliderChange;
+        _button.onClick.AddListener(ResetAgent);
     }
 
     private void OnDisable(){
@@ -65,6 +69,10 @@ public class ModelManager : MonoBehaviour
             m_CurrentModelIdx = idx;
             HandleModelChange();
         }
+    }
+
+    public void ResetAgent(){
+        _chair.EndEpisode();
     }
 
     
