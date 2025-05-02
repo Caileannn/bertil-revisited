@@ -1,0 +1,65 @@
+{
+    "Bertil": {
+        "checkpoints": [
+            {
+                "steps": 5499180,
+                "file_path": "results\\walking-base\\Bertil\\Bertil-5499180.onnx",
+                "reward": 2799.4823608398438,
+                "creation_time": 1739371418.1125429,
+                "auxillary_file_paths": [
+                    "results\\walking-base\\Bertil\\Bertil-5499180.pt"
+                ]
+            },
+            {
+                "steps": 5999420,
+                "file_path": "results\\walking-base\\Bertil\\Bertil-5999420.onnx",
+                "reward": 2360.521209716797,
+                "creation_time": 1739371914.1773796,
+                "auxillary_file_paths": [
+                    "results\\walking-base\\Bertil\\Bertil-5999420.pt"
+                ]
+            },
+            {
+                "steps": 6499423,
+                "file_path": "results\\walking-base\\Bertil\\Bertil-6499423.onnx",
+                "reward": 2578.683481389826,
+                "creation_time": 1739372406.8675601,
+                "auxillary_file_paths": [
+                    "results\\walking-base\\Bertil\\Bertil-6499423.pt"
+                ]
+            },
+            {
+                "steps": 6999265,
+                "file_path": "results\\walking-base\\Bertil\\Bertil-6999265.onnx",
+                "reward": 2398.1681707170274,
+                "creation_time": 1739372898.8685477,
+                "auxillary_file_paths": [
+                    "results\\walking-base\\Bertil\\Bertil-6999265.pt"
+                ]
+            },
+            {
+                "steps": 7338788,
+                "file_path": "results\\walking-base\\Bertil\\Bertil-7338788.onnx",
+                "reward": null,
+                "creation_time": 1739373276.0157197,
+                "auxillary_file_paths": [
+                    "results\\walking-base\\Bertil\\Bertil-7338788.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 7338788,
+            "file_path": "results\\walking-base\\Bertil.onnx",
+            "reward": null,
+            "creation_time": 1739373276.0157197,
+            "auxillary_file_paths": [
+                "results\\walking-base\\Bertil\\Bertil-7338788.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.2.0.dev0",
+        "torch_version": "2.2.2+cu121"
+    }
+}

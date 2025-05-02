@@ -1,0 +1,389 @@
+{
+    "Bertil": {
+        "checkpoints": [
+            {
+                "steps": 99998,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-99998.onnx",
+                "reward": 77.674704683744,
+                "creation_time": 1741970809.1498628,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-99998.pt"
+                ]
+            },
+            {
+                "steps": 199988,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-199988.onnx",
+                "reward": 83.63413206096197,
+                "creation_time": 1741970927.258383,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-199988.pt"
+                ]
+            },
+            {
+                "steps": 299987,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-299987.onnx",
+                "reward": 99.02986377930091,
+                "creation_time": 1741971042.2431731,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-299987.pt"
+                ]
+            },
+            {
+                "steps": 399959,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-399959.onnx",
+                "reward": 107.44898018601764,
+                "creation_time": 1741971154.563434,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-399959.pt"
+                ]
+            },
+            {
+                "steps": 499858,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-499858.onnx",
+                "reward": 117.01532313698216,
+                "creation_time": 1741971266.198471,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-499858.pt"
+                ]
+            },
+            {
+                "steps": 599998,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-599998.onnx",
+                "reward": 133.13045294388482,
+                "creation_time": 1741971376.6321442,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-599998.pt"
+                ]
+            },
+            {
+                "steps": 699973,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-699973.onnx",
+                "reward": 142.5980070013749,
+                "creation_time": 1741971487.4321597,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-699973.pt"
+                ]
+            },
+            {
+                "steps": 799995,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-799995.onnx",
+                "reward": 168.37025040846603,
+                "creation_time": 1741971591.4991143,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-799995.pt"
+                ]
+            },
+            {
+                "steps": 899845,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-899845.onnx",
+                "reward": 178.51823888872772,
+                "creation_time": 1741971701.2526026,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-899845.pt"
+                ]
+            },
+            {
+                "steps": 999988,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-999988.onnx",
+                "reward": 233.14002128269362,
+                "creation_time": 1741971807.7774584,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-999988.pt"
+                ]
+            },
+            {
+                "steps": 1099950,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1099950.onnx",
+                "reward": 196.33299372318018,
+                "creation_time": 1741971915.9565537,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1099950.pt"
+                ]
+            },
+            {
+                "steps": 1199996,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1199996.onnx",
+                "reward": 250.6802665431325,
+                "creation_time": 1741972022.4626682,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1199996.pt"
+                ]
+            },
+            {
+                "steps": 1299559,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1299559.onnx",
+                "reward": 338.2084993634905,
+                "creation_time": 1741972126.8919973,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1299559.pt"
+                ]
+            },
+            {
+                "steps": 1399920,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1399920.onnx",
+                "reward": 402.3991180419922,
+                "creation_time": 1741972232.5438757,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1399920.pt"
+                ]
+            },
+            {
+                "steps": 1499964,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1499964.onnx",
+                "reward": 434.82788646730603,
+                "creation_time": 1741972334.777748,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1499964.pt"
+                ]
+            },
+            {
+                "steps": 1599889,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1599889.onnx",
+                "reward": 418.6735606723362,
+                "creation_time": 1741972438.1804216,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1599889.pt"
+                ]
+            },
+            {
+                "steps": 1699989,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1699989.onnx",
+                "reward": 419.7151284275285,
+                "creation_time": 1741972542.3873339,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1699989.pt"
+                ]
+            },
+            {
+                "steps": 1799950,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1799950.onnx",
+                "reward": 517.3249982468625,
+                "creation_time": 1741972645.3635895,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1799950.pt"
+                ]
+            },
+            {
+                "steps": 1899983,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1899983.onnx",
+                "reward": 425.5415573120117,
+                "creation_time": 1741972748.8793504,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1899983.pt"
+                ]
+            },
+            {
+                "steps": 1999957,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-1999957.onnx",
+                "reward": 593.7156206766764,
+                "creation_time": 1741972853.040202,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-1999957.pt"
+                ]
+            },
+            {
+                "steps": 2099963,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2099963.onnx",
+                "reward": 635.3989900861468,
+                "creation_time": 1741972952.4386537,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2099963.pt"
+                ]
+            },
+            {
+                "steps": 2199954,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2199954.onnx",
+                "reward": 620.7715040353628,
+                "creation_time": 1741973057.5764236,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2199954.pt"
+                ]
+            },
+            {
+                "steps": 2299910,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2299910.onnx",
+                "reward": 763.8106080658582,
+                "creation_time": 1741973160.4700086,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2299910.pt"
+                ]
+            },
+            {
+                "steps": 2399959,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2399959.onnx",
+                "reward": 781.7083978091969,
+                "creation_time": 1741973262.6573102,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2399959.pt"
+                ]
+            },
+            {
+                "steps": 2499812,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2499812.onnx",
+                "reward": 704.6304437463933,
+                "creation_time": 1741973365.1628957,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2499812.pt"
+                ]
+            },
+            {
+                "steps": 2599558,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2599558.onnx",
+                "reward": 943.8532243110765,
+                "creation_time": 1741973466.048775,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2599558.pt"
+                ]
+            },
+            {
+                "steps": 2699873,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2699873.onnx",
+                "reward": 975.6406631469727,
+                "creation_time": 1741973569.2430937,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2699873.pt"
+                ]
+            },
+            {
+                "steps": 2799537,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2799537.onnx",
+                "reward": 1026.6219381778799,
+                "creation_time": 1741973671.2024922,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2799537.pt"
+                ]
+            },
+            {
+                "steps": 2899736,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2899736.onnx",
+                "reward": 1009.8564305160985,
+                "creation_time": 1741973774.7919736,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2899736.pt"
+                ]
+            },
+            {
+                "steps": 2999958,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-2999958.onnx",
+                "reward": 887.1492506663004,
+                "creation_time": 1741973876.6469417,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-2999958.pt"
+                ]
+            },
+            {
+                "steps": 3099966,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3099966.onnx",
+                "reward": 806.9634600552646,
+                "creation_time": 1741973979.033673,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3099966.pt"
+                ]
+            },
+            {
+                "steps": 3199673,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3199673.onnx",
+                "reward": 1017.4896055762448,
+                "creation_time": 1741974078.0837674,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3199673.pt"
+                ]
+            },
+            {
+                "steps": 3299648,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3299648.onnx",
+                "reward": 1146.3831709348237,
+                "creation_time": 1741974182.4281447,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3299648.pt"
+                ]
+            },
+            {
+                "steps": 3399977,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3399977.onnx",
+                "reward": 1139.1366200764974,
+                "creation_time": 1741974285.4461465,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3399977.pt"
+                ]
+            },
+            {
+                "steps": 3499646,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3499646.onnx",
+                "reward": 1029.543045759201,
+                "creation_time": 1741974387.4843113,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3499646.pt"
+                ]
+            },
+            {
+                "steps": 3599891,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3599891.onnx",
+                "reward": 1390.1674486048082,
+                "creation_time": 1741974490.5769222,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3599891.pt"
+                ]
+            },
+            {
+                "steps": 3699796,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3699796.onnx",
+                "reward": 1131.9325637817383,
+                "creation_time": 1741974593.5385528,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3699796.pt"
+                ]
+            },
+            {
+                "steps": 3799696,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3799696.onnx",
+                "reward": 1150.9766392707825,
+                "creation_time": 1741974693.6193013,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3799696.pt"
+                ]
+            },
+            {
+                "steps": 3899678,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3899678.onnx",
+                "reward": 1195.6740619892976,
+                "creation_time": 1741974795.1608107,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3899678.pt"
+                ]
+            },
+            {
+                "steps": 3999813,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-3999813.onnx",
+                "reward": 1002.3341070810953,
+                "creation_time": 1741974898.2772899,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-3999813.pt"
+                ]
+            },
+            {
+                "steps": 4000313,
+                "file_path": "results\\chair-balance-v1\\Bertil\\Bertil-4000313.onnx",
+                "reward": 1010.8469842404735,
+                "creation_time": 1741974898.4130995,
+                "auxillary_file_paths": [
+                    "results\\chair-balance-v1\\Bertil\\Bertil-4000313.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 4000313,
+            "file_path": "results\\chair-balance-v1\\Bertil.onnx",
+            "reward": 1010.8469842404735,
+            "creation_time": 1741974898.4130995,
+            "auxillary_file_paths": [
+                "results\\chair-balance-v1\\Bertil\\Bertil-4000313.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.2.0.dev0",
+        "torch_version": "2.2.2+cu121"
+    }
+}

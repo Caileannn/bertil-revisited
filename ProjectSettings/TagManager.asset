@@ -10,6 +10,7 @@ TagManager:
   - Target
   - sit
   - Stairs
+  - Obstacle
   layers:
   - Default
   - TransparentFX
