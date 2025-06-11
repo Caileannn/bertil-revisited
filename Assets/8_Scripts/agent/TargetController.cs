@@ -17,7 +17,7 @@ namespace Unity.MLAgentsExamples
         public string tagToDetect = "Agent"; //collider tag to detect
 
         [Header("Agent to Reset")]
-        public Chair agent; //The agent to reset when the target is touched       
+        public Agent agent; //The agent to reset when the target is touched       
 
         [Header("Target Placement")]
         public float spawnRadius; //The radius in which a target can be randomly spawned.

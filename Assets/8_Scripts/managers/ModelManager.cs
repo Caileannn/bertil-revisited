@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using Unity.MLAgents.Policies;
+using Unity.MLAgents;
 using Unity.Sentis;
 using Unity.Sentis.ONNX;
 using UnityEngine;
@@ -22,7 +23,7 @@ public class ModelManager : MonoBehaviour
 
     public TrainingData _trainingData;
 
-    public Chair _chair;
+    public Agent _chair;
 
     public delegate void OnModelChangedDelegate(ModelAsset modelAsset);
 
@@ -42,7 +43,8 @@ public class ModelManager : MonoBehaviour
     public void Start(){
 
         Debug.Log($"Number of Models : {_modelAssets.Count}");
-        _chair.SetModel("Bertil", _modelAssets[m_CurrentModelIdx], InferenceDevice.Burst);
+        // Change to "Bertil" or "DuckRabbit"
+        _chair.SetModel("DuckRabbit", _modelAssets[m_CurrentModelIdx], InferenceDevice.Burst);
         Debug.Log($"Set Model {_modelAssets[m_CurrentModelIdx].name}");
 
     }
@@ -60,7 +62,7 @@ public class ModelManager : MonoBehaviour
     }
 
     public void HandleModelChange(){
-        _chair.SetModel("Bertil", _modelAssets[m_CurrentModelIdx], InferenceDevice.Burst);
+        _chair.SetModel("DuckRabbit", _modelAssets[m_CurrentModelIdx], InferenceDevice.Burst);
         OnModelChanged?.Invoke(_modelAssets[m_CurrentModelIdx]);
     }
 
@@ -83,7 +85,7 @@ public class ModelManager : MonoBehaviour
 [System.Serializable]
 public class TrainingData
 {
-    public TrainingRun Bertil;
+    public TrainingRun DuckRabbit;
 }
 
 [System.Serializable]

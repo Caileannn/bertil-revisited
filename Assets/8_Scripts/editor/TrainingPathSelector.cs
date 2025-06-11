@@ -37,7 +37,7 @@ public class TrainingPathSelector : Editor
                 trainingFileHolder._trainingData = JsonUtility.FromJson<TrainingData>(jsonContent);
 
                 List<FileInfo> nnList = new List<FileInfo>();
-                foreach (var cp in trainingFileHolder._trainingData.Bertil.checkpoints){
+                foreach (var cp in trainingFileHolder._trainingData.DuckRabbit.checkpoints){
                     try{
                         // Create FileInfo object
                         FileInfo fileInfo = new FileInfo(cp.file_path);

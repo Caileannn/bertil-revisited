@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6e36071676a8fe4d8b7adc08e1deacf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  baseArea: {fileID: 7418866971930987124, guid: 4477b151db7bccc4fa0b61baaf023c95, type: 3}
+  baseArea: {fileID: 7418866971930987124, guid: e315e14409e8ef442910df963c75a203, type: 3}
   numAreas: 20
   separation: 120
   buildOnly: 0

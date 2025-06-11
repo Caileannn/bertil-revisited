@@ -22,7 +22,7 @@ public class GraphPlotter : MonoBehaviour
     private void Start()
     {   
         // Calculate min and max rewards
-        checkpoints = _modelManager._trainingData.Bertil.checkpoints;
+        checkpoints = _modelManager._trainingData.DuckRabbit.checkpoints;
 
         minReward = checkpoints.Min(cp => cp.reward);
         maxReward = checkpoints.Max(cp => cp.reward);
